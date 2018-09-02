@@ -1,0 +1,1 @@
+/home/oishouya/.emacs.d
