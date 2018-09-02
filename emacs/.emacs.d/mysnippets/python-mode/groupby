@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: groupby
-# key: groupby
-# --
-df.groupby(${1:column}).${2:function}()

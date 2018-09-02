@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: factorize
-# key: factorize
-# --
-labels, uniques = pd.factorize(${1:sequence}, sort=True)

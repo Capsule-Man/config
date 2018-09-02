@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: asfreq
-# key: asfreq
-# --
-asfreq(freq='${1:A/M/D/H/T/S}')

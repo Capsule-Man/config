@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: dataframe
-# key: dataframe
-# --
-pd.DataFrame({
-    '${1:colume1}': [${4:values}],
-    '${2:column2}': [${5:values}],
-    '${3:column3}': [${6:values}]
-})

@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: date_range
-# key: date_range
-# --
-pd.date_range(start='${1:2018-04-27}', end='${2:2018-04-30}', periods=3)

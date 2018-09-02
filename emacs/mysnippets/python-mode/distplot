@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: distplot
-# key: distplot
-# --
-sns.set()
-sns.distplot(${1:data})

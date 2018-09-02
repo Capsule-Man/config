@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: crosstab
-# key: crosstab
-# --
-pd.crosstab(${1:first_col}, ${2:second_col})

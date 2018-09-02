@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: lineplot(time-series)
-# key: lineplot
-# --
-sns.lineplot(data=${1:time-series-df})

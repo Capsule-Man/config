@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: jointplot
-# key: jointplot
-# --
-sns.jointplot(x="${1:x-axis}", y="${2:y-axis}", hue="${3:grouping}", data=${4:dataset}, kind="reg")

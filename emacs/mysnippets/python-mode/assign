@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: assign(add column)
-# key: assign
-# --
-.assign(${1:col_name}=${2:lambda x: x})

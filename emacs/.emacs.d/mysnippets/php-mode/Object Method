@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: Object Method
-# key: object_method
-# --
-get_class_methods("$1");

@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: pivot_table
-# key: pivot
-# --
-pd.pivot_table(df, values=${1:values}, index=[${2:index}], columns=[${3:columns}], aggfunc=np.sum)

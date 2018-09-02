@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: map
-# key: map
-# --
-${1:series}.map(${2:dict/func})

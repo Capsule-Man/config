@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: merge
-# key: merge
-# --
-pd.merge(${1:first}, ${2:second}, on=${3:key}, how=${1:inner/left/right/outer})
