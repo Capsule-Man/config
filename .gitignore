@@ -2,3 +2,4 @@
 /push.fish
 !/.emacs.d/init.el
 !/.emacs.d/mysnippets
+!/.emacs.d/private-conf
