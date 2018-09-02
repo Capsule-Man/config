@@ -3,6 +3,10 @@
   (setq user-emacs-directory (file-name-directory load-file-name)))
 ;; Directory for custom module 
 (add-to-list 'load-path "~/.emacs.d/custom")
+(add-to-list 'load-path "~/.emacs.d/private-conf")
+
+;; プロキシ
+;; (load "myproxy" t)
 
 ;; Not Backup
 (add-to-list 'backup-directory-alist
