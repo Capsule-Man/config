@@ -1,5 +1,5 @@
-/push.fish
-/.gitignore
+push.fish
+.gitignore
 /.emacs.d/*
 !/.emacs.d/init.el
 !/.emacs.d/mysnippets
