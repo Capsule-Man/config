@@ -1,5 +1,6 @@
 /.emacs.d/*
 /push.fish
+/.gitignore
 !/.emacs.d/init.el
 !/.emacs.d/mysnippets
 !/.emacs.d/private-conf
