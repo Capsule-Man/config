@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: concat
+# key: concat
+# --
+pd.concat([${1:first}, ${2:second}], axis=${3:1})

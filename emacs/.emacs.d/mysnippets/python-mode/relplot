@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: relplot
+# key: relplot
+# --
+sns.relplot(x="${1:x-axis}", y="${2:y-axis}", hue="${3:color}", data=${4:dataset})

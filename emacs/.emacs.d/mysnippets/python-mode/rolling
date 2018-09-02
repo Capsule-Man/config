@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: rolling
+# key: rolling
+# --
+${1:df}.rolling(window=${2:window}, min_periods=${3:period}).${4:function}()
