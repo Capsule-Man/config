@@ -1,0 +1,31 @@
+;; -*- emacs-lisp -*- <18/03/20 22:26:23 /home/oishouya/.emacs.d/tramp>
+;; Tramp connection history.  Don't change this file.
+;; You can delete it, forcing Tramp to reapply the checks.
+
+((["sudo" "root" "oishouya-VPCJ13AFJ" nil nil]
+  ("uname" "Linux 4.13.0-32-generic")
+  ("locale" "LC_ALL=en_US.utf8")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("~root" "/root")
+  ("file-exists" "test -e")
+  ("ls" "/bin/ls --color=never")
+  ("ls-dired" t)
+  ("stat" nil)
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 0)
+  ("readlink" "\\readlink")
+  ("gid-string" "root")
+  ("uid-integer" 0)
+  ("tmpdir" "/tmp")
+  ("touch-t" t)
+  ("touch" "\\touch"))
+ (["sudo" "root" "ec2-18-182-10-132.ap-northeast-1.compute.amazonaws.com" nil nil]
+  nil)
+ (["ssh" "centos" "ec2-18-182-10-132.ap-northeast-1.compute.amazonaws.com" nil nil]
+  nil))

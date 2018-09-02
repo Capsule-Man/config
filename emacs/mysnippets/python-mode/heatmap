@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: heatmap
+# key: heatmap
+# --
+sns.heatmap(${1:dataset})

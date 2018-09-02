@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: countplot
+# key: countplot
+# --
+sns.countplot(x="${1:x-axis}", hue="${2:grouping}", data=${3:dataset})

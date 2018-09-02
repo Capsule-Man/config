@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: plot
+# key: plot
+# --
+import matplotlib.pyplot as plt
+plt.show()

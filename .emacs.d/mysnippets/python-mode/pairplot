@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pairplot
+# key: pairplot
+# --
+sns.pairplot(${1:dataset}, vars=[${2:grouping}], kind="reg")

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: drop_duplicates
+# key: drop_dup
+# --
+drop_duplicates(subset=None, keep='first')

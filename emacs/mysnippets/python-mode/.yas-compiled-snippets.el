@@ -1,0 +1,41 @@
+;;; Compiled snippets and support files for `python-mode'
+;;; Snippet definitions:
+;;;
+(yas-define-snippets 'python-mode
+		     '(("to" "df.to_csv('${1:path}.csv',\n	  sep=',',\n	  columns=[],\n	  header=False,\n	  index=False\n	  )" "to_csv" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/to_csv" nil nil)
+		       ("scatterplot" "sns.scatterplot(x=\"${1:x-axis}\", y=\"${2:y-axis}\", hue=\"${3:grouping}\", data=${4:dataset})" "scatterplot" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/scatterplot" nil nil)
+		       ("rolling" "${1:df}.rolling(window=${2:window}, min_periods=${3:period}).${4:function}()" "rolling" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/rolling" nil nil)
+		       ("resample" "resample('${1:A/M/D/H/T/S}').${2:ohlc/max/min...}()" "resample" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/resa,ple" nil nil)
+		       ("rename" ".rename({'${1:before}': '${2:after}', '${3:before}': '${4:after}', '${5:before}': '${6:after}'}, axis='columns')\n" "rename" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/rename" nil nil)
+		       ("relplot" "sns.relplot(x=\"${1:x-axis}\", y=\"${2:y-axis}\", hue=\"${3:color}\", data=${4:dataset})" "relplot" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/relplot" nil nil)
+		       ("read" "df = pd.read_csv('${1:path}.csv',\n		 header=None,\n		 names=[],\n		 index_col=None,\n		 skiprows=None,\n		 compression='bz2'\n		 )" "read_csv" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/read_csv" nil nil)
+		       ("plot" "import matplotlib.pyplot as plt\nplt.show()\n" "plot" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/plot" nil nil)
+		       ("pivot" "pd.pivot_table(df, values=${1:values}, index=[${2:index}], columns=[${3:columns}], aggfunc=np.sum)" "pivot_table" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/pivot_table" nil nil)
+		       ("pandas" "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n" "pandas numpy" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/pandas numpy" nil nil)
+		       ("pairplot" "sns.pairplot(${1:dataset}, vars=[${2:grouping}], kind=\"reg\")" "pairplot" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/pairplot" nil nil)
+		       ("merge" "pd.merge(${1:first}, ${2:second}, on=${3:key}, how=${1:inner/left/right/outer})" "merge" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/merge" nil nil)
+		       ("map" "${1:series}.map(${2:dict/func})" "map" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/map" nil nil)
+		       ("lmplot" "sns.lmplot(x=\"${1:x-axis}\", y=\"${2:y-axis}\", hue=\"${3:grouping}\", col=\"${4:column}\", data=${5:dataset})" "lmplot" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/lmplot" nil nil)
+		       ("lineplot" "sns.lineplot(data=${1:time-series-df})" "lineplot(time-series)" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/lineplot-time" nil nil)
+		       ("lineplot" "sns.lineplot(x=\"${1:x-axis}\", y=\"${2:y-axis}\", hue=\"${3:grouping}\", data=${4:dataset})" "lineplot(rel)" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/lineplot-rel" nil nil)
+		       ("jointplot" "sns.jointplot(x=\"${1:x-axis}\", y=\"${2:y-axis}\", hue=\"${3:grouping}\", data=${4:dataset}, kind=\"reg\")" "jointplot" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/jointplot" nil nil)
+		       ("heatmap" "sns.heatmap(${1:dataset})" "heatmap" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/heatmap" nil nil)
+		       ("groupby" "df.groupby(${1:column}).${2:function}()" "groupby" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/groupby" nil nil)
+		       ("filter" "${1:df}.filter(regex='${2:regex}', axis=${3:0/1})\n" "filter" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/filter" nil nil)
+		       ("factorize" "labels, uniques = pd.factorize(${1:sequence}, sort=True)" "factorize" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/factorize" nil nil)
+		       ("drop_dup" "drop_duplicates(subset=None, keep='first')" "drop_duplicates" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/drop_duplicates" nil nil)
+		       ("drop_col" "${1:df}.drop(columns=[${2:cols}])" "drop_col" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/drop_col" nil nil)
+		       ("distplot" "sns.set()\nsns.distplot(${1:data})" "distplot" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/distplot" nil nil)
+		       ("date_range" "pd.date_range(start='${1:2018-04-27}', end='${2:2018-04-30}', periods=3)" "date_range" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/date_range" nil nil)
+		       ("dataframe" "pd.DataFrame({\n    '${1:colume1}': [${4:values}],\n    '${2:column2}': [${5:values}],\n    '${3:column3}': [${6:values}]\n})" "dataframe" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/dataframe" nil nil)
+		       ("data_type" "int8, int16, int32, int64\nuint8, uint16, uint32, uint64\nfloat16, float32, float64, float128\nobject\ncategory\nbool\ndatetime64\ntimedelta" "data_type_list" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/data_type" nil nil)
+		       ("cut" "pd.cut(${1:series}, bins=${2:int/sequence}, labels=[${3:labels}])" "cut" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/cut" nil nil)
+		       ("crosstab" "pd.crosstab(${1:first_col}, ${2:second_col})" "crosstab" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/crosstab" nil nil)
+		       ("countplot" "sns.countplot(x=\"${1:x-axis}\", hue=\"${2:grouping}\", data=${3:dataset})" "countplot" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/countplot" nil nil)
+		       ("concat" "pd.concat([${1:first}, ${2:second}], axis=${3:1})" "concat" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/concat" nil nil)
+		       ("barplot" "sns.barplot(x=\"${1:x-axis}\", y=\"${2:y-axis}\", hue=\"${3:grouping}\", data=${4:dataset})" "barplot" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/barplot" nil nil)
+		       ("assign" ".assign(${1:col_name}=${2:lambda x: x})\n" "assign(add column)" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/assign" nil nil)
+		       ("asfreq" "asfreq(freq='${1:A/M/D/H/T/S}')" "asfreq" nil nil nil "/home/oishouya/.emacs.d/mysnippets/python-mode/asfreq" nil nil)))
+
+
+;;; Do not edit! File generated at Wed Aug 22 22:07:24 2018

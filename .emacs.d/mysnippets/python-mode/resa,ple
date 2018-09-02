@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: resample
+# key: resample
+# --
+resample('${1:A/M/D/H/T/S}').${2:ohlc/max/min...}()

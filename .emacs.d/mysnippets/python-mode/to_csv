@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: to_csv
+# key: to
+# --
+df.to_csv('${1:path}.csv',
+	  sep=',',
+	  columns=[],
+	  header=False,
+	  index=False
+	  )

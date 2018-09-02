@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: lmplot
+# key: lmplot
+# --
+sns.lmplot(x="${1:x-axis}", y="${2:y-axis}", hue="${3:grouping}", col="${4:column}", data=${5:dataset})

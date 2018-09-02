@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: cut
+# key: cut
+# --
+pd.cut(${1:series}, bins=${2:int/sequence}, labels=[${3:labels}])

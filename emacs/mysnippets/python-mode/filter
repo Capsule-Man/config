@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: filter
+# key: filter
+# --
+${1:df}.filter(regex='${2:regex}', axis=${3:0/1})
