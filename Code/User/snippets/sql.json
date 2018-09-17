@@ -1,0 +1,39 @@
+{
+	 "Delete Duplicate Rows": {
+	 	"prefix": "deleteDup",
+	 	"body": [
+			 "DELETE A FROM TestDB..test AS A",
+			 "INNER JOIN (",
+			 "    SELECT ",
+			 "        testId,",
+			 "        Column1,",
+			 "        Column2,",
+			 "        ROW_NUMBER() OVER(PARTITION BY Column2 ORDER BY Column2) AS Count",
+			 "    FROM TestDB..test) AS B",
+			 "ON A.testId = B.testId",
+			 "WHERE B.Count > 1",
+			 "GO"
+	 	],
+	 	"description": "Delete Dulicate Rows"
+	 },
+	 "Merge": {
+	 	"prefix": "mergeExample",
+	 	"body": [
+			"MERGE INTO Sales AS Target",
+			"USING (",
+			"    VALUES",
+			"    ('Japan', 'Hukuoka', '100'),",
+			"    ('Canada', 'Alberta', '200'),",
+			"    ('United States', 'Montana', '200')",
+			"    ) AS Source (Country, Region, Sales)",
+			"ON Target.Country = Source.Country",
+			"AND Target.Region = Source.Region",
+			"WHEN MATCHED THEN  ",
+			"UPDATE SET Sales = Source.Sales",
+			"WHEN NOT MATCHED BY TARGET THEN",
+			"INSERT (Country, Region, Sales) VALUES (Country, Region, Sales);",
+			"GO",
+	 	],
+	 	"description": "Example Merge"
+	 }
+}

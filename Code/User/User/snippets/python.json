@@ -1,0 +1,9 @@
+{
+	"title": {
+		"prefix": "tri",
+		"body": [
+			"snippet_dict = {\n    \"{title}\".format(title=title): {\n        \"prefix\": \"{trigger}\".format(trigger=trigger),\n        \"body\": [body],\n        \"description\": \"{description}\".format(description=description)\n    }\n}"
+		],
+		"description": "desc"
+	}
+}
